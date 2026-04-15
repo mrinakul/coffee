@@ -8,10 +8,10 @@
 
 /* Секция ABOUT */
 .about {
-    background-image: url('/../public/about/bg.png');
-    background-size: cover;
-    background-position: center;
+    background-image: url(/about/bg.png);
+    background-position: 50%;
     background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     padding: 60px 20px;
     position: relative;

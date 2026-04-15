@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-
 import Main from './components/Main/Main'
 import About from './components/About/About'
 import Menu from './components/Menu/Menu'
