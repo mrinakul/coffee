@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero { 
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
+    min-height: 520px; 
+    overflow: hidden; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+.hero__image { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+} 
+
+.hero__overlay { 
+    position: absolute; 
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.42); 
+} 
+
+.hero__content { 
+    position: absolute; 
+    inset: 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+    text-align: center; 
+    z-index: 2; 
+} 
+
+.hero__title { 
+    color: #F5F1E8; 
+    font-size: 5.5rem; 
+    font-weight: 700; 
+} 
+
+.hero__subtitle { 
+    color: #F5F1E8; 
+    font-size: 1.5rem; 
+    font-weight: 600; 
+}
+
+/* Секция ГАРМОНИЯ */
+.harmony {
+    background-color: #F5F1E8;
+    font-family: 'Poppins', sans-serif;
+    color: #5B1312;
+    width: 100%;
+    height: 95vh;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.harmony__text {
+    margin-left: 100px;
+    margin-top: -70px;
+    font-size: 1.5rem;
+    width: 40%;
+    font-weight: 600;
+    color: #5B1312;
+}
+
+.harmony__image {
+    margin-top: -60px;
+
+    width: 99vw;              /* растянуть на всю ширину экрана */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.harmony__image img {
+    width: 100%;
+    display: block;
+}
+
+/* Секция ПРЕИМУЩЕСТВА */
+.advantages {
+    background-color: #5B1312;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F1E8;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.advantages__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #F5F1E8;
+}
+
+.advantages__grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.advantage__card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 16px;
+}
+
+.advantage-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.advantage-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #F5F1E8;
+}
+
+.advantages__button {
+    text-align: center;
+}
+
+.btn-more {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #F5F1E8;
+    color: #F5F1E8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 32px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background: #F5F1E8;
+    color: #5B1312;
+}
+
+/* Секция РЕКОМЕНДАЦИИ */
+.recommend {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-color: #F5F1E8;
+    padding: 70px 20px;
+}
+
+.recommend-title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #5B1312;
+    margin-bottom: 50px;
+}
+
+.coffee__grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.coffee-card {
+    width: 20%;
+    border: 1px solid #5B1312;
+    border-radius: 5px;
+    position: relative;
+}
+
+.coffee-image {
+    width: 100%;
+    padding: 10px 0;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5B1312;
+}
+
+.coffee-image img {
+    width: 100%;
+    padding: 10px 0;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.coffee-info {
+    padding: 10px 20px;
+}
+
+.coffee-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #5B1312;
+    margin-bottom: 15px;
+}
+
+.coffee-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5B1312;
+    margin-bottom: 5px;
+}
+
+.coffee-volume {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5B1312;
+    margin-bottom: 12px;
+}
+
+.coffee-description {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #5B1312;
+    margin-bottom: 70px;
+}
+
+.coffee__button {
+    text-align: center;
+}
+
+.btn-show-more {
+    display: inline-block;
+    background: #5B1312;
+    color: #F5F1E8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 12px 47px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-show-more:hover {
+    background: #F5F1E8;
+    color: #5B1312;
+    border: 1px solid #5B1312;
+}
+
+/* Секция НОВИНКИ */
+.sale {
+    background-color: #5B1312;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F1E8;
+    padding: 70px 20px;
+    width: 100%;
+}
+
+.sale__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #F5F1E8;
+}
+
+.sale__content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sale-img {
+    width: 25%;
+}
+
+@media (max-width: 1400px) {
+    .hero__title {
+        font-size: 5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+
+    .harmony {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    .harmony__text {
+        margin-left: 70px;
+        margin-top: -55px;
+        width: 48%;
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 2.6rem;
+    }
+
+    .advantages__grid {
+        gap: 20px;
+    }
+
+    .coffee__grid {
+        gap: 24px;
+    }
+
+    .coffee-card {
+        width: 22%;
+    }
+
+    .sale__content {
+        gap: 30px;
+    }
+
+    .sale-img {
+        width: 28%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero__title {
+        font-size: 4.4rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.1rem;
+    }
+
+    .harmony {
+        height: auto;
+        min-height: 74vh;
+    }
+
+    .harmony__text {
+        margin-left: 50px;
+        margin-top: -45px;
+        width: 56%;
+        font-size: 1.12rem;
+        line-height: 1.45;
+    }
+
+    .advantages {
+        padding: 60px 20px;
+    }
+
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 2.3rem;
+        margin-bottom: 36px;
+    }
+
+    .advantages__grid {
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-bottom: 36px;
+    }
+
+    .advantage__card {
+        width: 30%;
+        min-width: 220px;
+        padding: 24px 16px;
+    }
+
+    .advantage-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantage-title {
+        font-size: 1.15rem;
+    }
+
+    .recommend {
+        padding: 60px 20px;
+    }
+
+    .coffee__grid {
+        gap: 20px;
+    }
+
+    .coffee-card {
+        width: 28%;
+    }
+
+    .coffee-name {
+        font-size: 1.3rem;
+    }
+
+    .coffee-description {
+        font-size: 0.8rem;
+    }
+
+    .sale {
+        padding: 60px 20px;
+    }
+
+    .sale__content {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .sale-img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        height: 88vh;
+        min-height: 460px;
+    }
+
+    .hero__title {
+        font-size: 3.8rem;
+    }
+
+    .hero__subtitle {
+        font-size: 0.95rem;
+    }
+
+    .harmony {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 40px;
+    }
+
+    .harmony__text {
+        margin-left: 28px;
+        margin-top: -34px;
+        width: 70%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .advantages__grid {
+        gap: 16px;
+    }
+
+    .advantage__card {
+        width: 45%;
+        min-width: 200px;
+        padding: 22px 14px;
+    }
+
+    .advantage-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 16px;
+    }
+
+    .advantage-title {
+        font-size: 1.05rem;
+    }
+
+    .coffee__grid {
+        gap: 18px;
+    }
+
+    .coffee-card {
+        width: 42%;
+    }
+
+    .coffee-info {
+        padding: 10px 16px;
+    }
+
+    .coffee-name {
+        font-size: 1.15rem;
+    }
+
+    .coffee-volume {
+        font-size: 0.82rem;
+    }
+
+    .coffee-description {
+        font-size: 0.78rem;
+        margin-bottom: 60px;
+    }
+
+    .coffee-price {
+        font-size: 1.1rem;
+    }
+
+    .sale__content {
+        gap: 20px;
+    }
+
+    .sale-img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 78vh;
+        min-height: 420px;
+    }
+
+    .hero__content {
+        padding: 16px;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+        line-height: 1.05;
+        margin-bottom: 10px;
+    }
+
+    .hero__subtitle {
+        font-size: 0.88rem;
+    }
+
+    .harmony {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 32px;
+    }
+
+    .harmony__image {
+        width: 100vw;
+    }
+
+    .harmony__text {
+        margin-left: 0;
+        margin-top: -24px;
+        width: 100%;
+        padding: 0 16px;
+        font-size: 0.94rem;
+        line-height: 1.5;
+    }
+
+    .advantages {
+        padding: 50px 16px;
+    }
+
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+
+    .advantages__grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 28px;
+    }
+
+    .advantage__card {
+        width: 100%;
+        max-width: 420px;
+        padding: 18px 12px;
+    }
+
+    .advantage-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 14px;
+    }
+
+    .advantage-title {
+        font-size: 1rem;
+    }
+
+    .btn-more,
+    .btn-show-more {
+        font-size: 1rem;
+        padding: 10px 26px;
+    }
+
+    .recommend {
+        padding: 50px 16px;
+    }
+
+    .coffee__grid {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .coffee-card {
+        width: 46%;
+    }
+
+    .coffee-image {
+        margin-bottom: 14px;
+    }
+
+    .coffee-name {
+        font-size: 1.02rem;
+    }
+
+    .coffee-volume {
+        font-size: 0.78rem;
+        margin-bottom: 10px;
+    }
+
+    .coffee-description {
+        font-size: 0.74rem;
+        margin-bottom: 56px;
+    }
+
+    .coffee-price {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
+    .sale {
+        padding: 50px 16px;
+    }
+
+    .sale__content {
+        gap: 16px;
+    }
+
+    .sale-img {
+        width: 46%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .hero {
+        height: 68vh;
+        min-height: 380px;
+    }
+
+    .hero__title {
+        font-size: 2.4rem;
+        margin-bottom: 8px;
+    }
+
+    .hero__subtitle {
+        font-size: 0.8rem;
+    }
+
+    .harmony {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 24px;
+    }
+
+    .harmony__image {
+        margin-top: -44px;
+        width: 100vw;
+    }
+
+    .harmony__text {
+        margin-top: -16px;
+        font-size: 0.88rem;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 1.55rem;
+        margin-bottom: 20px;
+    }
+
+    .advantage__card {
+        padding: 16px 10px;
+        border-radius: 12px;
+    }
+
+    .advantage-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 12px;
+    }
+
+    .advantage-title {
+        font-size: 0.92rem;
+    }
+
+    .btn-more,
+    .btn-show-more {
+        font-size: 0.92rem;
+        padding: 9px 20px;
+    }
+
+    .coffee__grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .coffee-card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .coffee-image {
+        margin-bottom: 12px;
+    }
+
+    .coffee-info {
+        padding: 10px 14px;
+    }
+
+    .coffee-name {
+        font-size: 1rem;
+    }
+
+    .coffee-volume {
+        font-size: 0.74rem;
+    }
+
+    .coffee-description {
+        font-size: 0.7rem;
+        margin-bottom: 52px;
+    }
+
+    .coffee-price {
+        font-size: 1rem;
+    }
+
+    .sale__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale-img {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        height: 62vh;
+        min-height: 340px;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .hero__subtitle {
+        font-size: 0.74rem;
+    }
+
+    .harmony {
+        padding-bottom: 22px;
+    }
+
+    .harmony__image {
+        margin-top: -34px;
+    }
+
+    .harmony__text {
+        margin-top: -12px;
+        padding: 0 12px;
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    .advantages {
+        padding: 40px 12px;
+    }
+
+    .recommend,
+    .sale {
+        padding: 40px 12px;
+    }
+
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 1.35rem;
+        margin-bottom: 18px;
+    }
+
+    .advantage__card {
+        padding: 14px 8px;
+    }
+
+    .advantage-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .advantage-title {
+        font-size: 0.86rem;
+    }
+
+    .btn-more,
+    .btn-show-more {
+        font-size: 0.86rem;
+        padding: 8px 16px;
+    }
+
+    .coffee-card {
+        max-width: 100%;
+    }
+
+    .coffee-info {
+        padding: 8px 12px;
+    }
+
+    .coffee-name {
+        font-size: 0.92rem;
+    }
+
+    .coffee-volume {
+        font-size: 0.7rem;
+        margin-bottom: 8px;
+    }
+
+    .coffee-description {
+        font-size: 0.64rem;
+        margin-bottom: 48px;
+    }
+
+    .coffee-price {
+        font-size: 0.92rem;
+        padding: 10px 0;
+    }
+
+    .sale-img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero__title {
+        font-size: 1.8rem;
+    }
+
+    .hero__subtitle {
+        font-size: 0.7rem;
+    }
+
+    .harmony__text {
+        font-size: 0.78rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .advantages__title,
+    .recommend-title,
+    .sale__title {
+        font-size: 1.2rem;
+    }
+
+    .harmony__text {
+        font-size: 0.72rem;
+    }
+
+    .advantage-title {
+        font-size: 0.8rem;
+    }
+
+    .btn-more,
+    .btn-show-more {
+        font-size: 0.8rem;
+        padding: 7px 14px;
+    }
+
+    .coffee-name {
+        font-size: 0.86rem;
+    }
+
+    .coffee-volume {
+        font-size: 0.66rem;
+    }
+
+    .coffee-description {
+        font-size: 0.6rem;
+    }
+
+    .coffee-price {
+        font-size: 0.86rem;
+    }
+}
