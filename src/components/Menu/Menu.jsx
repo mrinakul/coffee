@@ -413,7 +413,6 @@ function Menu() {
                             </div>
                         )}
 
-                        {totalCount() > 0 && <div className="cart-counter">{totalCount()}</div>}
                     </div>
                 </div>
             </section>
