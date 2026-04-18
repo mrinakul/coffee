@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './reviews.css'
-
 import starIcon from '/reviews/star.svg'
 import starActiveIcon from '/reviews/starActive.svg'
 

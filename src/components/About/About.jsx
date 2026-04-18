@@ -29,19 +29,16 @@ function About() {
                             <h3 class="advantage-title">Лучшие сорта кофе</h3>
                             <p class="advantage-description">Выбери любимый вкус напитка</p>
                         </div>
-
                         <div class="advantage__card">
                             <img class="advantage-icon" src={wifi} alt="Wi-Fi" />
                             <h3 class="advantage-title">Бесплатный Wi-fi</h3>
                             <p class="advantage-description">Общайся с друзьями или решай рабочие вопросы</p>
                         </div>
-
                         <div class="advantage__card">
                             <img class="advantage-icon" src={dessert} alt="Десерт" />
                             <h3 class="advantage-title">Вкусные десерты</h3>
                             <p class="advantage-description">Ты никогда не останешься голодным</p>
                         </div>
-
                         <div class="advantage__card">
                             <img class="advantage-icon" src={coffee2} alt="Кофе с собой" />
                             <h3 class="advantage-title">Кофе с собой</h3>
@@ -62,12 +59,10 @@ function About() {
                                     <div class="taste-number">1</div>
                                     <p class="taste-text">Мы выбираем лучшие зёрна и следим за свежестью обжарки — ради настоящего вкуса в вашей чашке.</p>
                                 </div>
-
                                 <div class="taste__item">
                                     <div class="taste-number">2</div>
                                     <p class="taste-text">Натуральные ингредиенты — мы не используем искусственные сиропы и ароматизаторы.</p>
                                 </div>
-
                                 <div class="taste__item">
                                     <div class="taste-number">3</div>
                                     <p class="taste-text">Любим сладкое так же, как и вы. Поэтому десерты у нас особенные — свежие, нежные, настоящие.</p>

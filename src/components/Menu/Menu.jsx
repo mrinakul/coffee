@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './menu.css'
-
 import product1 from '/menu/product1.png'
 import product2 from '/menu/product2.png'
 import product3 from '/menu/product3.png'
@@ -236,7 +235,6 @@ function Menu() {
                         <div className="filters-sidebar">
                             <div className="search-box">
                                 <img src={searchIcon} alt="Поиск" className="search-icon" />
-
                                 <input
                                     type="text"
                                     placeholder="Введите название товара"
@@ -255,7 +253,6 @@ function Menu() {
                                     />
                                     <span>Все</span>
                                 </label>
-
                                 <label className={`filter-option ${selectedCategories.Кофе ? 'active' : ''}`}>
                                     <input
                                         type="checkbox"
@@ -264,7 +261,6 @@ function Menu() {
                                     />
                                     <span>Кофе</span>
                                 </label>
-
                                 <label className={`filter-option ${selectedCategories.Чай ? 'active' : ''}`}>
                                     <input
                                         type="checkbox"
@@ -294,7 +290,6 @@ function Menu() {
                                     alt="Корзина"
                                     className="cart-toggle__icon"
                                 />
-
                                 {totalCount() > 0 && (
                                     <span className="cart-toggle__count-text">{totalCount()}</span>
                                 )}
@@ -307,12 +302,10 @@ function Menu() {
                                     <div className="coffee-image">
                                         <img src={item.image} alt={item.name} />
                                     </div>
-
                                     <div className="coffee-info">
                                         <h3 className="coffee-name">{item.name}</h3>
                                         <div className="coffee-volume">{item.volume}</div>
                                         <p className="coffee-description">{item.description}</p>
-
                                         <div className="coffee-price-wrapper">
                                             <div className="coffee-price">{item.price}</div>
                                             <button
@@ -327,17 +320,14 @@ function Menu() {
                                 </div>
                             ))}
                         </div>
-
                         {filteredItems.length === 0 && (
                             <div className="no-results">
                                 Ничего не найдено. Попробуйте изменить параметры поиска.
                             </div>
                         )}
-
                         {cartOpen && (
                             <div className="cart-modal">
                                 <h3 className="cart-modal__title">Корзина</h3>
-
                                 {cartItems.length === 0 ? (
                                     <div className="cart-empty">Корзина пуста</div>
                                 ) : (
@@ -352,12 +342,10 @@ function Menu() {
                                                     >
                                                         <img src={trashIcon} alt="Удалить" />
                                                     </button>
-
                                                     <div className="cart-row__name">
                                                         <div className="cart-row__title">{item.name}</div>
                                                         <div className="cart-row__volume">{item.volume}</div>
                                                     </div>
-
                                                     <div className="cart-row__controls">
                                                         <button type="button" onClick={() => decrease(item.id)}>
                                                             −
@@ -367,7 +355,6 @@ function Menu() {
                                                             +
                                                         </button>
                                                     </div>
-
                                                     <div className="cart-row__price">
                                                         {item.priceValue * item.quantity}р
                                                     </div>
@@ -378,7 +365,6 @@ function Menu() {
                                         <div className="cart-summary">
                                             <div className="cart-summary__top">
                                                 <h4 className="cart-total">К оплате: {totalAmount()}р</h4>
-
                                                 <NavLink
                                                     to="/checkout"
                                                     state={{
@@ -390,14 +376,12 @@ function Menu() {
                                                     Оплатить
                                                 </NavLink>
                                             </div>
-
                                             <div className="cart-pickup">
                                                 <img
                                                     src={pinIcon}
                                                     alt="Локация"
                                                     className="cart-pickup__icon"
                                                 />
-
                                                 <div className="cart-pickup__info">
                                                     <div className="cart-pickup__title">
                                                         Самовывоз из кофейни

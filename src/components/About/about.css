@@ -25,17 +25,17 @@
     font-family: 'Poppins', sans-serif;
     color: #F5F1E8;
     width: 50%;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .about__title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
 .about__text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -306,6 +306,9 @@
 }
 
 @media (max-width: 768px) {
+    .about {
+        min-height: auto;
+    }
     .about__content {
         width: 85%;
         margin-left: 0;
@@ -318,7 +321,7 @@
     }
     
     .about__text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     
     .advantages {
@@ -413,16 +416,18 @@
 
 @media (max-width: 600px) {
     .about {
-        padding: 40px 15px;
         min-height: auto;
     }
     
     .about__content {
         width: 100%;
+        padding: 0;
+        margin: 0;
         text-align: center;
     }
     
     .about__title {
+        margin: 0;
         font-size: 1.8rem;
     }
     
@@ -441,6 +446,8 @@
     
     .advantages__grid {
         gap: 20px;
+        justify-content: center;
+        display: flex;
     }
     
     .advantage__card {
@@ -643,6 +650,7 @@
     
     .map__container {
         height: 250px;
+        text-align: center;
     }
     
     .map__container iframe {

@@ -7,6 +7,7 @@ import Menu from './components/Menu/Menu'
 import Reviews from './components/Reviews/Reviews'
 import Checkout from './components/Checkout/Checkout'
 import Payment from './components/Payment/Payment'
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton'
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
             </Routes>
 
             <Footer />
+            <ScrollToTopButton />
         </BrowserRouter>
     )
 }

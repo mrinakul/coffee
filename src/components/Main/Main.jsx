@@ -128,7 +128,6 @@ function Main() {
                                 </div>
                             ))}
                         </div>
-
                         <div className="coffee__button">
                             <NavLink to="/menu" className="btn-show-more">
                             Показать еще

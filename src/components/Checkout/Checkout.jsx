@@ -43,7 +43,6 @@ function Checkout() {
 
         if (name === 'expiry') {
             formattedValue = value.replace(/\D/g, '').slice(0, 4)
-
             if (formattedValue.length > 2) {
                 formattedValue = `${formattedValue.slice(0, 2)}/${formattedValue.slice(2)}`
             }
